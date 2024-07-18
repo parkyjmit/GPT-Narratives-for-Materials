@@ -20,7 +20,10 @@ The advent of artificial intelligence (AI) has enabled a comprehensive explorati
 
 Conda enviroment to reproduce our work is provided as follow.
 ```
-conda env create -f environment.yml
+conda create -n gpt_narratives python=3.10.13
+pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu118
+pip install  dgl -f https://data.dgl.ai/wheels/torch-2.2/cu118/repo.html
+pip install joblib wandb matplotlib scikit-learn openai python-dotenv jarvis-tools
 ```
 
 # Reproducing Generation Code
