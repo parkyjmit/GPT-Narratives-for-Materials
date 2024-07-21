@@ -1,1 +1,5 @@
 wandb
+logs
+scripts
+outputs
+bert_*
